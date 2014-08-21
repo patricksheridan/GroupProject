@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Optional theme -->
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <title>Johnny Bravo</title>
@@ -21,6 +20,7 @@
 	
 	<th>View</th>
 	<th>Edit</th>
+	<th>Delete</th>
 	</tr>
 	<#list emps as emp>
 	
@@ -31,6 +31,7 @@
 	 
 	  <td><a href='${rc.contextPath}/${emp.ID}/ViewEmployee.mvc'>View</a></td>
 	  <td><a href='${rc.contextPath}/${emp.ID}'>Edit</a></td>
+	  <td><a href='${rc.contextPath}/${emp.ID}'>Delete</a></td>
 	</tr>
 
 	</#list>

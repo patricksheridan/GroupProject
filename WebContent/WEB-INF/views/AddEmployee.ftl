@@ -2,30 +2,40 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <title>Add Employee</title>
 </head>
 <body>
 
-<h1> Add Employee</h1>
+<div id="main">
+	<h1> Add Employee</h1>
+	
+	<form action="addEmployeeSend.mvc" method="post" class="../style.css">
+	
+	<div>
+		<label for="fname">First Name</label>
+		<input type="text" name="firstName">
+	</div>
+	<div>	
+		<label for="lname">Last Name</label>
+		<input type="text" name="lastName">
+	</div>
+	<div>	
+		<label for="salary">Salary</label>
+		<input type="text" name="salary">
+	</div>
+	<div>	
+		<label for="ninumber">NI Number</label>
+		<input type="text" name="nI_Number">
+	</div>
 
-<form action="addEmployeeSend.mvc" method="post">
-
-<label for="firstName">First Name</label>
-<input type="text" name="firstName"><br>
-
-<label for="lastName">Last Name</label>
-<input type="text" name="lastName"><br>
-
-<label for="salary">Salary</label>
-<input type="text" name="salary"><br>
-
-<label for="nI_Number">NI Number</label>
-<input type="text" name="nI_Number"><br>
-
-
-<input type="submit" value="Submit">
-
-</form> 
+	<br>
+	<a href="http://localhost:10080/employeemvc/">Main Menu</a> <input type="submit" value="Submit">
+	
+	</form> 
+</div>
 
 </body>
 </html>
