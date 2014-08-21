@@ -12,15 +12,29 @@
 
  	<h1> Employee Record</h1>
 
-	<label>${Emp.ID}</label>
-	<label>${Emp.firstName}</label>
-	<label>${Emp.lastName}</label>
-	<label>${Emp.salary}</label> 
-	<label>${Emp.NI_Number}</label>  
+	<table border="1">
+	
+<a href="http://localhost:10080/employeemvc/"> Main Menu</a>
+	<tr>
+		<th>ID</th>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>National Insurance</th>
+		<th>Salary</th>
+	</tr>
 
-	<a href="http://localhost:10080/employeemvc/">Main Menu</a>
-	<a href="EditEmployee.mvc"> Edit Employee</a>
-	<a href="DeleteEmployee.mvc"> Delete Employee</a>
+	<tr>
+	  <td>${Emp.ID} </td>
+	  <td> ${Emp.firstName} </td>
+	  <td>${Emp.lastName}</td>
+	  <td>${Emp.NI_Number}</td>
+	  <td>${Emp.salary}</td>
+	</tr>
+
+	</table>
+
+	
+	
 </div>
 </body>
 </html>
