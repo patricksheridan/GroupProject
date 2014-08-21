@@ -30,8 +30,8 @@
 	  <td>${emp.lastName}</td>
 	 
 	  <td><a href='${rc.contextPath}/${emp.ID}/ViewEmployee.mvc'>View</a></td>
-	  <td><a href='${rc.contextPath}/${emp.ID}'>Edit</a></td>
 	  <td><a href='${rc.contextPath}/${emp.ID}'>Delete</a></td>
+	  <td><a href='${rc.contextPath}/${emp.ID}/EditEmployee.mvc'>Edit</a></td>
 	</tr>
 
 	</#list>

@@ -14,43 +14,58 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
 @Controller
 public class EmployeeController {
-	
-	@Autowired 
+
+	@Autowired
 	IEmployeeMapper employeeMapper;
-	
-	@RequestMapping(value="index.mvc")
-	public String landingPage (Model m){ 
+
+	@RequestMapping(value = "index.mvc")
+	public String landingPage(Model m) {
 		Employee.list.clear();
 		Employee.list.addAll(employeeMapper.getEmployees());
-		
+
 		m.addAttribute("emps", Employee.list);
 		return "EmployeeList";
 	}
-	
-	@RequestMapping(value="AddEmployee.mvc")
-	public String addEmployee(Model m)
-	{
-	
+
+	@RequestMapping(value = "AddEmployee.mvc")
+	public String addEmployee(Model m) {
+
 		return "AddEmployee";
 	}
-	
-	 @RequestMapping(value="addEmployeeSend.mvc", method=RequestMethod.POST)
-	  public String signup(Employee e) {
-		 
-		 Employee.list.add(e);
-		 employeeMapper.InsertEmployee(e.getFirstName(),e.getLastName(),e.getNI_Number(),e.getSalary());
-          return "redirect:index.mvc";
-	      }
 
-	 @RequestMapping("/{emp.ID}/ViewEmployee.mvc")
-	 public String ViewEmployee (Model m, @PathVariable("emp.ID") int ID){
-		 
-		 
-		 m.addAttribute("Emp", employeeMapper.getEmployeeByID(ID));
-		 return "employeeView";
-	 }
+	@RequestMapping(value = "addEmployeeSend.mvc", method = RequestMethod.POST)
+	public String signup(Employee e) {
+
+		Employee.list.add(e);
+		employeeMapper.InsertEmployee(e.getFirstName(), e.getLastName(),
+				e.getNI_Number(), e.getSalary());
+		return "redirect:index.mvc";
+	}
+	
+	@RequestMapping(value="/{emp.ID}/EditEmployeeSend.mvc", method = RequestMethod.POST)
+	public String Edit(Employee e , @PathVariable("emp.ID") int ID){
+		
+		employeeMapper.UpdateEmployee(e.getID(), e.getFirstName(), e.getLastName(),
+				e.getNI_Number(), e.getSalary());
+		
+		return "redirect:../index.mvc";
+	}
+
+	@RequestMapping("/{emp.ID}/ViewEmployee.mvc")
+	public String ViewEmployee(Model m, @PathVariable("emp.ID") int ID) {
+
+		m.addAttribute("Emp", employeeMapper.getEmployeeByID(ID));
+		return "employeeView";
+	}
+
+	@RequestMapping(value = "/{emp.ID}/EditEmployee.mvc")
+	public String EditEmployee(Model m, @PathVariable("emp.ID") int ID) {
+
+		m.addAttribute("emp", employeeMapper.getEmployeeByID(ID));
+		return "EditEmployee";
+
+	}
 
 }

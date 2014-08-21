@@ -6,6 +6,7 @@ import mvc_employee.models.Employee;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 public interface IEmployeeMapper {
 	
@@ -16,6 +17,10 @@ public interface IEmployeeMapper {
 	public void InsertEmployee(@Param("firstName") String firstName, @Param("lastName") String lastName, @Param("nI_Number") String nI_Number, @Param("salary") float salary);
 	
 	@Select("Select * FROM Employees where ID = #{iD}")
-	Employee getEmployeeByID(@Param("iD") int ID);
+	public Employee getEmployeeByID(@Param("iD") int ID);
+	
+	@Update("Update Employees set firstName = #{firstName},lastName = #{lastName}, nI_Number= #{nI_Number}, salary = #{salary} WHERE ID=#{iD}")
+	public void UpdateEmployee(@Param("iD") int ID,@Param("firstName") String firstName, @Param("lastName") String lastName, @Param("nI_Number") String nI_Number, @Param("salary") float salary);
+	
 
-}
+} 
