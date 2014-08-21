@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="main">
-
+<link rel="shortcut icon" href="../fav.ico" type="image/x-icon" />
  	<h1> Employee Record</h1>
 
 	<table border="1">

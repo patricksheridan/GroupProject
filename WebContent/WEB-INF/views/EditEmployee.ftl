@@ -8,7 +8,8 @@
 <body>
 
 <div id="main">
-
+	<link rel="shortcut icon" href="../fav.ico" type="image/x-icon" /> 
+	
 	<h1>Edit Employee</h1>
 	
 	

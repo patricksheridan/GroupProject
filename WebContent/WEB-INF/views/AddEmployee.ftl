@@ -11,7 +11,7 @@
 
 <div id="main">
 	<h1> Add Employee</h1>
-	
+	<link rel="shortcut icon" href="fav.ico" type="image/x-icon" /> 
 	<form action="addEmployeeSend.mvc" method="post" class="../style.css">
 	
 	<div>

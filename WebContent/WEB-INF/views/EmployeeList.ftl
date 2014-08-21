@@ -7,6 +7,7 @@
 </head>
 <body>
 <div id ="main">
+<link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
 <div id="CSSTableGenerator">
 	<h1>Employees</h1>
 	<table border="1">
