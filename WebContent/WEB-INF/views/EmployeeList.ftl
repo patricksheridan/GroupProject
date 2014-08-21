@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-<meta charset="UTF-8">
+<!-- Optional theme -->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <title>Johnny Bravo</title>
 </head>
 <body>
-<div id="main">
+<div id ="main">
+<div id="CSSTableGenerator">
 	<h1>Employees</h1>
 	<table border="1">
 	<tr>
@@ -34,6 +35,7 @@
 
 	</#list>
 	</table>
+</div>
 </div>
 </body>
 </html>

@@ -6,9 +6,5 @@
 </head>
 <body>
 
-<li>${emp.firstname} ${emp.lastName}
-
-
-
 </body>
 </html>
