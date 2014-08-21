@@ -15,5 +15,7 @@ public interface IEmployeeMapper {
 	@Insert("INSERT INTO Employees (firstName,lastName,NI_Number,salary) values ( #{firstName}, #{lastName}, #{nI_Number}, #{salary} ) ")
 	public void InsertEmployee(@Param("firstName") String firstName, @Param("lastName") String lastName, @Param("nI_Number") String nI_Number, @Param("salary") float salary);
 	
+	@Select("Select * FROM Employees where ID = #{iD}")
+	Employee getEmployeeByID(@Param("iD") int ID);
 
 }

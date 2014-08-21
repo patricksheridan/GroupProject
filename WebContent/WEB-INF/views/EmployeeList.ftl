@@ -28,7 +28,7 @@
 	  <td> ${emp.firstName} </td>
 	  <td>${emp.lastName}</td>
 	 
-	  <td><a href='${rc.contextPath}/${emp.ID}'>View</a></td>
+	  <td><a href='${rc.contextPath}/${emp.ID}/ViewEmployee.mvc'>View</a></td>
 	  <td><a href='${rc.contextPath}/${emp.ID}'>Edit</a></td>
 	</tr>
 	
