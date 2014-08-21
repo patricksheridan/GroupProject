@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../style.css"/>
+ 
 <title>Edit Employee</title>
+ 
+<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+ 
 </head>
 <body>
 
