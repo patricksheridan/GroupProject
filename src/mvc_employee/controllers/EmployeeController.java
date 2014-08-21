@@ -21,8 +21,9 @@ public class EmployeeController {
 	
 	@RequestMapping(value="index.mvc")
 	public String landingPage (Model m){ 
+		Employee.list.addAll(employeeMapper.getEmployees());
 		
-		m.addAttribute("emps", employeeMapper.getEmployees());
+		m.addAttribute("emps", Employee.list);
 		return "EmployeeList";
 	}
 

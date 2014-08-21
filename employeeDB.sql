@@ -19,7 +19,8 @@
 -- Table structure for table `Employees`
 --
 
-Create Database Employee
+Create Database Employee;
+use Employee;
 
 DROP TABLE IF EXISTS `Employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
