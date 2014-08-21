@@ -11,6 +11,8 @@
 <div id="CSSTableGenerator">
 	<h1>Employees</h1>
 	<table border="1">
+	<a href="AddEmployee.mvc"> Add Employee</a>
+	
 	<tr>
 	<th>ID</th>
 	<th>First Name</th>
@@ -27,15 +29,15 @@
 	  <td> ${emp.firstName} </td>
 	  <td>${emp.lastName}</td>
 	 
-	  <td><a href='${rc.contextPath}/${emp.ID}'>View</a></td>
+	  <td><a href='${rc.contextPath}/${emp.ID}/ViewEmployee.mvc'>View</a></td>
 	  <td><a href='${rc.contextPath}/${emp.ID}'>Edit</a></td>
 	</tr>
-	
-
 
 	</#list>
 	</table>
 </div>
+
 </div>
+
 </body>
 </html>
