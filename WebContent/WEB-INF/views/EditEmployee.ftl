@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../style.css"/>
-<title>Insert title here</title>
+<title>Edit Employee</title>
 </head>
 <body>
 
