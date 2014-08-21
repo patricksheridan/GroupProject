@@ -1,3 +1,45 @@
+* {
+  border: none;
+}
+
+input {
+    border: 1px solid black;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+}
+
+input[type=submit] 
+{
+	  font: bold 11px Arial;
+	  text-decoration: none;
+	  background-color: #EEEEEE;
+	  color: #333333;
+	  padding: 2px 6px 2px 6px;
+	  border-top: 1px solid #CCCCCC;
+	  border-right: 1px solid #333333;
+	  border-bottom: 1px solid #333333;
+	  border-left: 1px solid #CCCCCC;
+	
+}
+a
+{
+	  font: bold 11px Arial;
+	  text-decoration: none;
+	  background-color: #EEEEEE;
+	  color: #333333;
+	  padding: 2px 6px 2px 6px;
+	  border-top: 1px solid #CCCCCC;
+	  border-right: 1px solid #333333;
+	  border-bottom: 1px solid #333333;
+	  border-left: 1px solid #CCCCCC;
+}
+
+
 #main{
 	
 	width: 600px;
@@ -14,6 +56,8 @@ body {
 	font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
 	text-shadow: 0 1px 0 #fff;
 }
+
+
 
 strong {
 	font-weight: bold; 
