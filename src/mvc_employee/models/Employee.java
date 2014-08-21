@@ -1,12 +1,15 @@
 package mvc_employee.models;
 
+import java.util.List;
+
 public class Employee {
 	
 	private int ID;
 	private String firstName;
 	private String lastName;
-	private float salaty;
+	private float salary;
 	private String NI_Number;
+	public static List<Employee> list = new ArrayList<Employee>();
 	
 	public String getNI_Number() {
 		return NI_Number;
@@ -32,11 +35,11 @@ public class Employee {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public float getSalaty() {
-		return salaty;
+	public float getSalary() {
+		return salary;
 	}
-	public void setSalaty(float salaty) {
-		this.salaty = salaty;
+	public void setSalary(float salary) {
+		this.salary = salary;
 	}
 	
 	
