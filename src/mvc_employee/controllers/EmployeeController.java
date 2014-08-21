@@ -68,4 +68,11 @@ public class EmployeeController {
 
 	}
 
+	@RequestMapping(value ="/{emp.ID}/DeleteEmployee.mvc")
+	public String delteEmployee(Model m, @PathVariable("emp.ID") int ID) {
+
+		employeeMapper.DelteEmployee(ID);
+		return "redirect:../index.mvc";
+
+	}
 }
