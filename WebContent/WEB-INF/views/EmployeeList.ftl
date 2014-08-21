@@ -7,6 +7,8 @@
 <body>
 <h1>Employees</h1>
 
+<a href="AddEmployee.mvc"> Add Employee</a>
+
 <table border="1">
 <tr><th>Employees</th></tr>
 <#list emps as emp>

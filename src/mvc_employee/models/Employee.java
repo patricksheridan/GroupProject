@@ -1,5 +1,6 @@
 package mvc_employee.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
