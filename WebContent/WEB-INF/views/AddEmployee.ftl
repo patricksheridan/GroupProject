@@ -32,7 +32,7 @@
 	</div>
 
 	<br>
-	<a href="http://localhost:10080/employeemvc/">Main Menu</a> <input type="submit" value="Submit">
+	<a href="index.mvc">Main Menu</a> <input type="submit" value="Submit">
 	
 	</form> 
 </div>
